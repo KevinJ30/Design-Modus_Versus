@@ -7,17 +7,21 @@
 	<!-- Design -->
 	<link rel="stylesheet" href="css/design.css">
 
+	<!-- Normalize -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.min.css">
+
 	<!-- Font -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<!-- HEADER -->
-	<header>
-		<div class="wrapper">
-			<nav>
-				<li><a href="#"><span class="logo"></span></a></li>
+	<header class="clearfix">
+		<nav>
+			<a href="#"><img class="logo" alt="logo" src="images/logo.png"/></a>
+			<ul>
 				<li class="active"><a href="#" class="button">Home</a></li>
+				<li><a href="#" class="button">About</a></li>
 				<li><a href="#">Services</a></li>
 				<li>
 					<a href="#">Portfolio</a>
@@ -31,29 +35,112 @@
 				<li><a href="#">Features</a></li>
 				<li><a href="#">Contacts</a></li>
 				<li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-			</nav>
-		</div>
+			</ul>
+		</nav>
+		<!--<svg class="divider" viewbox="0 0 1897 9" preserveAspectRatio="none slice" xml:space="preserve">
+			<path d="M950,0h-2v8h-3V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8
+			h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2
+			h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8
+			h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2
+			h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8
+			h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2
+			h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8
+			h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2
+			h-1v6h-4V3h-1v5h-3V0h-2v8h-3V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8
+			h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2
+			h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8
+			h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2
+			h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8
+			h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2
+			h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8
+			h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6H6V3H5v5H2V0H0v9h1897V8h-4V2h-1v6h-4V2h-1v6h-4
+			V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8
+			h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2
+			h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8
+			h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2
+			h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8
+			h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2
+			h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8
+			h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V3h-1v5h-3V0h-2v8h-3V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2
+			h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8
+			h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2
+			h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8
+			h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2
+			h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8
+			h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2
+			h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-3V0h-2v8h-4V2h-1v6h-4V2h-1v6h-4V2h-1v6h-4V3h-1v5h-3V0z"/>
+		</svg>-->
+		<svg class="divider" viewbox="0 0 1897 9" preserveAspectRatio="none slice" xml:space="preserve">
+			<use xlink:href="images/Path.svg#path" />
+		</svg>
 	</header>
 	<!-- End HEADER -->
 
 	<!-- Section Home -->
-	<section class="home">
-		<a href="#" class="button"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
-
-		<div class="content">
+	<section class="home clearfix">
+		<div class="content clearfix">
+			<a href="#" class="pagination_button left"><i class="fa fa-angle-double-left" aria-hidden="true"></i></a>
 			<h1>Vestibulum</h1>
 			<p>Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo.</p>
+			<a href="#" class="pagination_button right"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 		</div>
-
-		<a href="#" class="button"><i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 
 		<div class="pagination">
 			<ul>
-				<li><a href="#"><span class="button"></span></a></li>
-				<li class="active"><a href="#"><span class="button"></span></a></li>
-				<li><a href="#"><span class="button"></span></a></li>
+				<li><a href="#" class="button"></a></li>
+				<li class="active"><a href="#" class="button"></a></li>
+				<li><a href="#" class="button"></a></li>
 			</ul>
 		</div>
 	</section>
+
+	<div class="wrapper">
+		<section class="intro clearfix">
+			<div class="col-9">
+				<h1>Some of our top services</h1>
+				<p>Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo. </p>
+			</div>
+			<div class="col-3">
+				<a href="#" class="button"><span>View more</span></a>
+			</div>
+		</section>
+	</div>
+
+	<div class="wrapper">
+		<section class="services clearfix">
+			<div class="col-3">
+				<div class="card active">
+					<span><i class="fa fa-thumbs-o-up" aria-hidden="true"></i></span>
+					<h3>Suspendisse</h3>
+					<p> Quisque id tellus quis risus vehicula vehicula ut turpis. In eros nulla, placerat vitae at, vehicula ut nunc. </p>
+					<a href="#" class="button"><span>Read more</span></a>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="card">
+					<span><i class="fa fa-key" aria-hidden="true"></i></span>
+					<h3>Meacenas</h3>
+					<p> Ut eleifend libero sed neque rhoncus consequat. Maecenas tincidunt, augue et rutrum condimentum, libero lectus mattis orci, ut commodo. </p>
+					<a href="#" class="button"><span>Read more</span></a>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="card">
+					<span><i class="fa fa-flag" aria-hidden="true"></i></span>
+					<h3>Aliquam</h3>
+					<p> Vivamus eget ante bibendum arcu vehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non.  </p>
+					<a href="#" class="button"><span>Read more</span></a>
+				</div>
+			</div>
+			<div class="col-3">
+				<div class="card">
+					<span><i class="fa fa-flask" aria-hidden="true"></i></span>
+					<h3>Habitasse</h3>
+					<p> Astehicula ultricies. Integer venenatis mattis nisl, vitae pulvinar dui tempor non.  </p>
+					<a href="#" class="button"><span>Read more</span></a>
+				</div>
+			</div>
+		</section>
+	</div>
 </body>
 </html>
