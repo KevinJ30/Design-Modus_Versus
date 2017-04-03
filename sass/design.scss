@@ -47,7 +47,6 @@ html, body{
 body{
 	font-family:$primaryFont, Helvetica, sans-serif;
 	font-size : $fontSize;
-
 }
 
 
@@ -394,4 +393,68 @@ header{
 	}
 	.col-3:last-child .card{ margin-right:0; }
 
+}
+
+.about{
+	position:relative;
+	background-color:$backgroundAboutColor;
+	padding-bottom:200px;
+
+	svg.divider{
+		height:20px;
+		fill:$backgroundColor;
+		transform:rotate(180deg);
+	}
+
+ 	.about-header{
+		position:relative;	
+	
+		h2{ 
+			color:$red; 
+			text-align:center;
+		}
+
+		p{
+			color:$darkGray;
+			text-align:center;
+			font-size:0.9em;
+		}
+	
+		.images-browser{
+			position:absolute;
+			width:100%;
+			min-width:1165px;
+			left: 0;
+			margin-top:3em;
+			bottom:-380px;
+			text-align:center;
+			.browser{
+				position:relative;
+				height:auto;
+				max-width:100%;
+				&.first, &.last{
+					width:370px;
+					transform:translateY(-50.5px);
+				}
+
+				&.last{
+					margin-left:-85px;
+					z-index:0;
+				}
+
+				&.second{
+					width:570px;
+					margin-left:-84px;
+					z-index:150;
+				}
+			}
+		}
+	}
+}
+
+
+
+.about-content{
+	width:100%;
+	padding-top:250px;
 }

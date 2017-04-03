@@ -368,4 +368,52 @@ header {
   .services .col-3:last-child .card {
     margin-right: 0; }
 
+.about {
+  position: relative;
+  background-color: #ececec;
+  padding-bottom: 200px; }
+  .about svg.divider {
+    height: 20px;
+    fill: #f3f3f3;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  .about .about-header {
+    position: relative; }
+    .about .about-header h2 {
+      color: #e2534b;
+      text-align: center; }
+    .about .about-header p {
+      color: #7f8c8c;
+      text-align: center;
+      font-size: 0.9em; }
+    .about .about-header .images-browser {
+      position: absolute;
+      width: 100%;
+      min-width: 1165px;
+      left: 0;
+      margin-top: 3em;
+      bottom: -380px;
+      text-align: center; }
+      .about .about-header .images-browser .browser {
+        position: relative;
+        height: auto;
+        max-width: 100%; }
+        .about .about-header .images-browser .browser.first, .about .about-header .images-browser .browser.last {
+          width: 370px;
+          -webkit-transform: translateY(-50.5px);
+              -ms-transform: translateY(-50.5px);
+                  transform: translateY(-50.5px); }
+        .about .about-header .images-browser .browser.last {
+          margin-left: -85px;
+          z-index: 0; }
+        .about .about-header .images-browser .browser.second {
+          width: 570px;
+          margin-left: -84px;
+          z-index: 150; }
+
+.about-content {
+  width: 100%;
+  padding-top: 250px; }
+
 /*# sourceMappingURL=design.css.map */
